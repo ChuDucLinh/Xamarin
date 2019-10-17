@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BT1_15520419.HelloPage"
+             Title="Màn hình chào">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nhập họ tên"
+                   HorizontalOptions="Center"></Label>
+            <Entry x:Name="txtName"></Entry>
+            <Button x:Name="btnHello"
+                    Text="Chào"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnHelloClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

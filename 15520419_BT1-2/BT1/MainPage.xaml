@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BT1_15520456"
+             x:Class="BT1_15520419.MainPage"
+             Title="Main Page">
+
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Màn hình chào"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnHelloClicked"></Button>
+            <Button Text="Màn hình tính tổng"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnCalcukatorClicked">
+            </Button>
+            <Button Text="Login"
+                    x:Name="Login"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnLoginClicked">
+            </Button>
+            <Button Text="Calculator"
+                    x:Name="Calculator"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnCalculatorClicked">
+            </Button>
+            <Button Text="StackLayout"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnStackLayoutClicked">
+            </Button>
+            <Button Text="AsoluteLayout"
+                    x:Name="AsoluteLayout"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnAsoluteLayoutClicked">
+            </Button>
+            <Button Text="GridLayout"
+                    x:Name="GridLayout"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnGridLayoutClicked">
+            </Button>
+            <Button Text="FlexLayout"
+                    x:Name="FlexLayout"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnFlexLayoutClicked">
+            </Button>
+            <Button Text="ScrollView"
+                    x:Name="ScrollView"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnScrollViewClicked">
+            </Button>
+            <Button Text="Entry"
+                    x:Name="Entry"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnEntryClicked">
+            </Button>
+            <Button Text="ListView"
+                    x:Name="ListView"
+                    HorizontalOptions="Center"
+                    Clicked="OnBtnListViewClicked">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

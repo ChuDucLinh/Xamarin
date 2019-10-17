@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BT1_15520419.CalTotalPage"
+             Title="Màn hình tính tổng">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nhập số A"
+                   HorizontalOptions="Start"></Label>
+            <Entry x:Name="txtNumberA"
+                   Keyboard="Numeric"
+                   Placeholder="Nhập số A"></Entry>
+            <Label Text="Nhập số B"
+                   HorizontalOptions="Start"></Label>
+            <Entry x:Name="txtNumberB"
+                   Keyboard="Numeric"
+                   Placeholder="Nhập số B"></Entry>
+            <Label Text="Tổng: "
+                   x:Name="lblTotal"
+                   HorizontalOptions="Start"></Label>
+            <Button x:Name="btnCal"
+                    Text="Tính tổng"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnCal_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BT1_15520419.LoginPage"
+             Title="Màn hình đăng nhập">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Username"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtUsername"
+                   Grid.Column="1"
+                   Grid.Row="0"
+                   Placeholder="Nhập Username"></Entry>
+            <Label Text="Password"
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtPassword"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   IsPassword="True"
+                   Placeholder="Nhập Password"></Entry>
+            <Button x:Name="btnLogin"
+                    Text="Đăng nhập"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Clicked="btnLogin_Clicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
