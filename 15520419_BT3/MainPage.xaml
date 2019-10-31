@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BT3_15520456"
+             x:Class="BT3_15520419.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Button Text="Thêm loại hoa"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    x:Name="btnAddFlowerType"
+                    Clicked="btnAddFlowerType_Clicked"></Button>
+            <Button Text="Thêm hoa"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    x:Name="btnAddFlower"
+                    Clicked="btnAddFlower_Clicked"></Button>
+            <Button Text="Danh sách loại hoa"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    x:Name="btnListFlowerType"
+                    Clicked="btnListFlowerType_Clicked"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

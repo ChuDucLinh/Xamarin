@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BT3_15520419.AddFlowerPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Mã loại"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Picker x:Name="pkrFlowerType"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Title="Chọn loại hoa"
+                    ItemsSource="{Binding FlowerTypes}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedIndexChanged="pkrFlowerType_SelectedIndexChanged">
+            </Picker>
+            
+            <Label Text="Tên hoa"
+                   Grid.Column="0"
+                   Grid.Row="1"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtFlowerTypeName"
+                   Grid.Column="1"
+                   Grid.Row="1"></Entry>
+
+            <Label Text="Hình"
+                   Grid.Column="0"
+                   Grid.Row="2"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtFlowerTypeImage"
+                   Grid.Column="1"
+                   Grid.Row="2"></Entry>
+
+            <Label Text="Giá"
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Entry x:Name="txtFlowerTypePrice"
+                   Grid.Column="1"
+                   Grid.Row="3"
+                   Keyboard="Numeric"></Entry>
+
+            <Label Text="Mô tả"
+                   Grid.Column="0"
+                   Grid.Row="4"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"></Label>
+            <Editor x:Name="txtFlowerTypeDescription"
+                   Grid.Column="1"
+                   Grid.Row="4"></Editor>
+
+            <Button x:Name="btnAdd"
+                    Text="Thêm"
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    Clicked="btnAdd_Clicked"></Button>
+            <Button x:Name="btnDelete"
+                    Text="Xóa"
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    Clicked="btnDelete_Clicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
